@@ -1,4 +1,4 @@
-💥 Reflected XSS Attack Simulation
+💥 Reflected XSS Attack Simulation : 
 This project demonstrates a Reflected Cross-Site Scripting (XSS) attack using a vulnerable search feature. It simulates how an attacker can craft a malicious URL containing JavaScript code to trick victims into giving up sensitive information like login credentials — even though the data isn't stored on the server.
 
 📌 Objective
@@ -22,10 +22,6 @@ A cloned version of the platform’s real login page is hosted as fake-login-pag
 
 Crafting Malicious URLs
 The attacker creates a URL like:
-
-php-template
-Copy
-Edit
 http://localhost:5000/search?q=<script>window.location='http://localhost:3001'</script>
 Phishing in Action
 Victims are tricked into clicking the malicious URL (via email, chat, QR codes, or comments).
