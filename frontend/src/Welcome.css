@@ -1,0 +1,78 @@
+/* 🌟 Welcome Page Styling */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 🔹 Main Welcome Container */
+.welcome-container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ✨ Heading Styles */
+.welcome-container h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* 🎨 Stylish Buttons */
+.welcome-container button {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.welcome-container button:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    transform: scale(1.05);
+}
+
+/* 🎭 Animation for Smooth Entry */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🌍 Responsive Design */
+@media (max-width: 500px) {
+    .welcome-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .welcome-container h1 {
+        font-size: 24px;
+    }
+
+    .welcome-container button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
