@@ -10,9 +10,9 @@ app.use(express.json());
 
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'XSSDEMO2', 
-    password: 'ReflectedXSS_Attack',  // Change if needed
-    database: 'reflected_xss'
+    user: 'your_mysql_username', 
+    password: 'your_user_password',  // Change if needed
+    database: 'your_database_name'
 });
 
 db.connect(err => {
