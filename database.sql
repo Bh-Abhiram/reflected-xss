@@ -29,7 +29,7 @@ IDENTIFIED BY 'new_password';
 
 STEP:2 : Grant all privileges to above user and database
 
-GRANT ALL PRIVILEGES on stored_xss.* TO 'new_user'@'locahost';
+GRANT ALL PRIVILEGES on reflected_xss.* TO 'new_user'@'locahost';
 
 STEP:3 : Check whether the user is created or not on particular database
 
